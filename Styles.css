@@ -1,0 +1,217 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: #ffffff;
+    padding: 1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Added shadow for depth */
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.navbar-nav .nav-link {
+    margin-right: 1rem;
+    color: #555;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #007bff;
+}
+
+/* Hero Section */
+.hero {
+    background: url('hero-bg.jpg') no-repeat center center/cover;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    padding: 0 2rem;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin: 1.5rem 0;
+}
+
+.hero .btn-primary {
+    padding: 0.8rem 2rem;
+    font-size: 1.2rem;
+    border-radius: 5px;
+}
+
+/* Course Section */
+#courses {
+    background-color: #f4f4f4;
+    padding: 2rem 0;
+}
+
+#courses h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #333;
+}
+
+/* Ensure all card images are the same size */
+.card {
+    min-height: 450px;  /* Adjust this to match the content height */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Ensures even spacing for buttons */
+    border: 1px solid #ddd; /* Border for visual separation */
+    border-radius: 5px; /* Rounded corners */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effects */
+}
+
+.card:hover {
+    transform: scale(1.05); /* Scale up on hover */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+.card img {
+    width: 100%;
+    height: 200px; /* Fixed height for images */
+    object-fit: cover; /* Ensures the image fits well */
+}
+
+.card-body {
+    padding: 1.5rem;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.card-text {
+    margin-bottom: 1.25rem;
+    color: #555;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+    transition: background-color 0.3s ease;
+    padding: 0.5rem 1.5rem; /* Consistent button padding */
+    border-radius: 5px; /* Rounded button corners */
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-top: 1px solid #ddd;
+}
+
+footer p {
+    margin-bottom: 0;
+    font-size: 1rem;
+    color: #333;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        font-size: 1.2rem;
+    }
+
+    .card img {
+        height: 150px; /* Reduced image height for mobile */
+    }
+
+    /* Adjust card heights for mobile */
+    .card {
+        min-height: 400px; /* Lower minimum height for smaller screens */
+    }
+}
+footer {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-top: 1px solid #ddd;
+    text-align: center; /* Center-align text */
+}
+
+footer .container {
+    max-width: 1200px; /* Limit the width of the footer content */
+    margin: auto;
+}
+
+.footer-content {
+    margin-bottom: 1.5rem; /* Space between the card and copyright */
+}
+
+/* Add the contact card styles from the previous response here */
+.contact-card {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    max-width: 300px;
+    margin: 0 auto; /* Center the card */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.tutor-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.tutor-title {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.contact-details {
+    text-align: left; /* Align text to the left */
+}
+
+.contact-details p {
+    margin: 5px 0;
+    color: #333;
+}
+
+.contact-details a {
+    color: #007bff;
+    text-decoration: none; /* Remove underline */
+}
+
+.contact-details a:hover {
+    text-decoration: underline; /* Underline on hover */
+}

@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Online</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">LearnItWithUs</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Courses</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero text-center">
+        <div class="container">
+            <h1 class="display-4">Learn and Grow with Our Courses</h1>
+            <p class="lead">High-quality online courses tailored for you.</p>
+            <a href="#courses" class="btn btn-primary">View Courses</a>
+        </div>
+    </section>
+
+    <!-- Course Features Section -->
+ <!-- Repeatable Course Feature Cards -->
+<section id="courses" class="py-5">
+    <div class="container">
+        <h2 class="text-center">Our Popular Courses</h2>
+        <div class="row">
+            <!-- Python Course Card -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="python.jpg" class="card-img-top" alt="Python Course">
+                    <div class="card-body">
+                        <h5 class="card-title">Python</h5>
+                        <p class="card-text">Learn Python programming from basics to advanced topics.</p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#pythonModal">
+                            Register Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Java Course Card -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="java.jpg" class="card-img-top" alt="Java Course">
+                    <div class="card-body">
+                        <h5 class="card-title">Java</h5>
+                        <p class="card-text">Master Java programming and build robust applications.</p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#javaModal">
+                            Register Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- C Course Card -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="c.jpg" class="card-img-top" alt="C Programming Course">
+                    <div class="card-body">
+                        <h5 class="card-title">C Programming</h5>
+                        <p class="card-text">Understand the fundamentals of C programming.</p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#cModal">
+                            Register Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- C++ Course Card -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="cpp.jpg" class="card-img-top" alt="C++ Course">
+                    <div class="card-body">
+                        <h5 class="card-title">C++</h5>
+                        <p class="card-text">Dive into object-oriented programming with C++.</p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#cppModal">
+                            Register Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- HTML Course Card -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="html.jpg" class="card-img-top" alt="HTML Course">
+                    <div class="card-body">
+                        <h5 class="card-title">HTML</h5>
+                        <p class="card-text">Learn to structure web pages using HTML.</p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#htmlModal">
+                            Register Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CSS Course Card -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="css.jpg" class="card-img-top" alt="CSS Course">
+                    <div class="card-body">
+                        <h5 class="card-title">CSS</h5>
+                        <p class="card-text">Style websites and applications with CSS.</p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#cssModal">
+                            Register Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- JavaScript Course Card -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="js.jpg" class="card-img-top" alt="JavaScript Course">
+                    <div class="card-body">
+                        <h5 class="card-title">JavaScript</h5>
+                        <p class="card-text">Become proficient in JavaScript for web development.</p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#jsModal">
+                           Register Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- DevOps Course Card -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="devops.jpg" class="card-img-top" alt="DevOps Course">
+                    <div class="card-body">
+                        <h5 class="card-title">DevOps</h5>
+                        <p class="card-text">Master the principles of DevOps and continuous delivery.</p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#devopsModal">
+                            Register Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- .NET Course Card -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="dotnet.jpg" class="card-img-top" alt=".NET Course">
+                    <div class="card-body">
+                        <h5 class="card-title">.NET</h5>
+                        <p class="card-text">Develop enterprise applications using .NET technologies.</p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#dotnetModal">
+                            Register Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SQL Course Card -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="sql.jpg" class="card-img-top" alt="SQL Course">
+                    <div class="card-body">
+                        <h5 class="card-title">SQL</h5>
+                        <p class="card-text">Learn database management with SQL.</p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#sqlModal">
+                            Register Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cisco Networking Course Card -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="cisco.jpg" class="card-img-top" alt="Cisco Networking Course">
+                    <div class="card-body">
+                        <h5 class="card-title">Cisco Networking</h5>
+                        <p class="card-text">Understand networking concepts with Cisco certifications.</p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#ciscoModal">
+                            Register Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Modals for each course -->
+
+<!-- Python Modal -->
+<div class="modal fade" id="pythonModal" tabindex="-1" aria-labelledby="pythonModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="pythonModalLabel">Python Course</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p><strong>Price:</strong> $99</p>
+                <p><strong>Course Duration:</strong> 3 months</p>
+
+                <form>
+                    <div class="mb-3">
+                        <label for="pythonEmail" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="pythonEmail" placeholder="Enter your email">
+                    </div>
+                    <div class="mb-3">
+                        <label for="pythonPassword" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="pythonPassword" placeholder="Enter your password">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Sign Up</button>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Java Modal -->
+<div class="modal fade" id="javaModal" tabindex="-1" aria-labelledby="javaModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="javaModalLabel">Java Course</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p><strong>Price:</strong> $120</p>
+                <p><strong>Course Duration:</strong> 4 months</p>
+                <form>
+                    <div class="mb-3">
+                        <label for="pythonEmail" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="pythonEmail" placeholder="Enter your email">
+                    </div>
+                    <div class="mb-3">
+                        <label for="pythonPassword" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="pythonPassword" placeholder="Enter your password">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Sign Up</button>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+                    
+ <!-- C Modal -->
+<div class="modal fade" id="cModal" tabindex="-1" aria-labelledby="cModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="cModalLabel">C Programming Course</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p><strong>Price:</strong> $90</p>
+                <p><strong>Course Duration:</strong> 2 months</p>
+                <form>
+                    <div class="mb-3">
+                        <label for="cEmail" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="cEmail" placeholder="Enter your email">
+                    </div>
+                    <div class="mb-3">
+                        <label for="cPassword" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="cPassword" placeholder="Enter your password">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Sign Up</button>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- C++ Modal -->
+<div class="modal fade" id="cppModal" tabindex="-1" aria-labelledby="cppModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="cppModalLabel">C++ Course</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p><strong>Price:</strong> $110</p>
+                <p><strong>Course Duration:</strong> 3 months</p>
+                <form>
+                    <div class="mb-3">
+                        <label for="cppEmail" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="cppEmail" placeholder="Enter your email">
+                    </div>
+                    <div class="mb-3">
+                        <label for="cppPassword" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="cppPassword" placeholder="Enter your password">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Sign Up</button>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- HTML Modal -->
+<div class="modal fade" id="htmlModal" tabindex="-1" aria-labelledby="htmlModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="htmlModalLabel">HTML Course</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p><strong>Price:</strong> $80</p>
+                <p><strong>Course Duration:</strong> 1 month</p>
+                <form>
+                    <div class="mb-3">
+                        <label for="htmlEmail" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="htmlEmail" placeholder="Enter your email">
+                    </div>
+                    <div class="mb-3">
+                        <label for="htmlPassword" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="htmlPassword" placeholder="Enter your password">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Sign Up</button>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- CSS Modal -->
+<div class="modal fade" id="cssModal" tabindex="-1" aria-labelledby="cssModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="cssModalLabel">CSS Course</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p><strong>Price:</strong> $85</p>
+                <p><strong>Course Duration:</strong> 1.5 months</p>
+                <form>
+                    <div class="mb-3">
+                        <label for="cssEmail" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="cssEmail" placeholder="Enter your email">
+                    </div>
+                    <div class="mb-3">
+                        <label for="cssPassword" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="cssPassword" placeholder="Enter your password">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Sign Up</button>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- JavaScript Modal -->
+<div class="modal fade" id="jsModal" tabindex="-1" aria-labelledby="jsModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="jsModalLabel">JavaScript Course</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p><strong>Price:</strong> $95</p>
+                <p><strong>Course Duration:</strong> 3 months</p>
+                <form>
+                    <div class="mb-3">
+                        <label for="jsEmail" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="jsEmail" placeholder="Enter your email">
+                    </div>
+                    <div class="mb-3">
+                        <label for="jsPassword" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="jsPassword" placeholder="Enter your password">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Sign Up</button>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- DevOps Modal -->
+<div class="modal fade" id="devopsModal" tabindex="-1" aria-labelledby="devopsModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="devopsModalLabel">DevOps Course</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p><strong>Price:</strong> $150</p>
+                <p><strong>Course Duration:</strong> 5 months</p>
+                <form>
+                    <div class="mb-3">
+                        <label for="devopsEmail" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="devopsEmail" placeholder="Enter your email">
+                    </div>
+                    <div class="mb-3">
+                        <label for="devopsPassword" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="devopsPassword" placeholder="Enter your password">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Sign Up</button>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- .NET Modal -->
+<div class="modal fade" id="dotnetModal" tabindex="-1" aria-labelledby="dotnetModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="dotnetModalLabel">.NET Course</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p><strong>Price:</strong> $130</p>
+                <p><strong>Course Duration:</strong> 4 months</p>
+                <form>
+                    <div class="mb-3">
+                        <label for="dotnetEmail" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="dotnetEmail" placeholder="Enter your email">
+                    </div>
+                    <div class="mb-3">
+                        <label for="dotnetPassword" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="dotnetPassword" placeholder="Enter your password">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Sign Up</button>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- SQL Modal -->
+<div class="modal fade" id="sqlModal" tabindex="-1" aria-labelledby="sqlModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="sqlModalLabel">SQL Course</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p><strong>Price:</strong> $100</p>
+                <p><strong>Course Duration:</strong> 2.5 months</p>
+                <form>
+                    <div class="mb-3">
+                        <label for="sqlEmail" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="sqlEmail" placeholder="Enter your email">
+                    </div>
+                    <div class="mb-3">
+                        <label for="sqlPassword" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="sqlPassword" placeholder="Enter your password">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Sign Up</button>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Cisco Networking Modal -->
+<div class="modal fade" id="ciscoModal" tabindex="-1" aria-labelledby="ciscoModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="ciscoModalLabel">Cisco Networking Course</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p><strong>Price:</strong> $140</p>
+                <p><strong>Course Duration:</strong> 4 months</p>
+                <form>
+                    <div class="mb-3">
+                        <label for="ciscoEmail" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="ciscoEmail" placeholder="Enter your email">
+                    </div>
+                    <div class="mb-3">
+                        <label for="ciscoPassword" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="ciscoPassword" placeholder="Enter your password">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Sign Up</button>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+    <!-- Footer -->
+    <footer class="bg-light text-center py-4">
+        <footer>
+    <div class="container">
+        <div class="footer-content">
+            <div class="contact-card">
+                <h3 class="tutor-name">Venkat Karthik Simhadri</h3>
+                <p class="tutor-title">Computer Science Tutor</p>
+                <div class="contact-details">
+                    <p><strong>Email:</strong> <a href="mailto:johndoe@example.com">vsimgadri@rivier.edu</a></p>
+                    <p><strong>Phone:</strong> <a href="tel:+1234567890">+1 (603)584-9823</a></p>
+                    <p><strong>Address:</strong> 420 South Main st, Nashuan, NH, 03060.</p>
+                    <p><strong>Organization:</strong> Rivier University Tutoring Center</p>
+                </div>
+            </div>
+        </div>
+        <p>&copy; 2024 Rivier University Tutoring Center. All rights reserved.</p>
+    </div>
+</footer>
+
+  
+
+    <!-- JS and Bootstrap scripts -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
